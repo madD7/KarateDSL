@@ -30,7 +30,6 @@ Feature: Test for Home page
 
     Scenario: Get 10 articles from the page passing object with parameters
         Given params { limit:10, offset:0 }
-        Given url 'https://conduit.productionready.io/api/'
 
         # path is extension of url. 
         # Url is valid all time during execution of Scenario.
@@ -40,4 +39,34 @@ Feature: Test for Home page
         Then status 200
     # End of Scenario
 
+    Scenario: Assertion example 
+        # match == , match != , match contains, match contains only, match contains any etc. https://github.com/karatelabs/karate        
+        Given params { limit:10, offset:0 }
+
+        Given path 'articles'
+        When method Get
+        Then status 200
+        # response is keyword for response object. Object response has key 'tags' and an array of strings as value.
+        # For single value:
+        ## And match response.tags contains 'cars'   
+
+        # Array for multiple values, use array:
+        And match response.tags contains [ 'cars', 'baby']    
+        And match response.tags !contains 'truck'
+
+        # response.tags value is an array. Other datatype can be - #string
+        And match response.tags == "#array"
+        And macth each response.tags == "#string"
+    # End of Scenario
     
+    Scenario: Get 10 articles assertion example
+        Given params { limit:10, offset:0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
+
+        # Value of 'articles' key object, must be an array of size 10
+        And match response.articles == '#[10]'
+        # Value of 'articlesCount' is number 500
+        And match response.articlesCount == 500 
+    # End of Scenario
