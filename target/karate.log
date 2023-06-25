@@ -375,3 +375,185 @@
 
 22:26:28.691 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
 22:26:29.741 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+20:34:07.484 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:34:07.511 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+20:34:09.152 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:34:09.646 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:34:09.868 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://conduit.productionready.io/api/tags
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:34:10.629 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 749
+2 < 503
+2 < Date: Sun, 25 Jun 2023 15:04:11 GMT
+2 < Content-Type: text/html; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache, no-store
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JLs2NHYKf7AXY4nQcnChDgIF6UL8JFXy6wg0wH4Ro0vvSkqWW%2BAgj64gEfyoW9aT7gPHQ8ntCTVOS9pqHOcRSVqmpwDWbTY%2FW35t%2B1MHqTCV543J1AOIFuCueIOE9t3c7R8T"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7dce19fa898585e8-BOM
+2 < alt-svc: h3=":443"; ma=86400
+<!DOCTYPE html>
+	<html>
+	  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>Application Error</title>
+		<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+	  </head>
+	  <body>
+		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
+	  </body>
+	</html>
+
+20:34:10.719 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:10
+Then status 200
+status code was: 503, expected: 200, response time in milliseconds: 749, url: https://conduit.productionready.io/api/tags, response: 
+<!DOCTYPE html>
+	<html>
+	  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>Application Error</title>
+		<style media="screen">
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		</style>
+	  </head>
+	  <body>
+		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
+	  </body>
+	</html>
+classpath:conduitApp/feature/HomePage.feature:10
+20:34:11.538 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+20:47:17.016 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:47:17.029 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+20:47:18.379 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:47:18.834 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://demo.productionready.io/api/tags
+1 > Host: demo.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:47:19.781 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 942
+1 < 403
+1 < Date: Sun, 25 Jun 2023 15:17:20 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-amz-request-id: GM8STF24D767ZN8H
+1 < x-amz-id-2: +XcNX2DHUzj3E/irEvJSKaxkq5k+IJhI2ShkxgIUZvmNpcEBMItzyCCQbIkWAuOkgbKrGwZ2O7g=
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bmuqhcjJ91OrSlf%2FNAF69U2TyWhYs2c3b81k7Evrlb0ysfcBVsUDs6w3ZwpAOis%2Bc13v6pvJ8LJfHDmJZiy7T8oSaX0hgAvrwAX%2Fbf3STlhtO2Ae3AoDnYHl3f9EV9EPQJlBixb%2Fhw3z4A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7dce2d3ebcb8f35f-BOM
+1 < alt-svc: h3=":443"; ma=86400
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<h1>403 Forbidden</h1>
+<ul>
+<li>Code: AccessDenied</li>
+<li>Message: Access Denied</li>
+<li>RequestId: GM8STF24D767ZN8H</li>
+<li>HostId: +XcNX2DHUzj3E/irEvJSKaxkq5k+IJhI2ShkxgIUZvmNpcEBMItzyCCQbIkWAuOkgbKrGwZ2O7g=</li>
+</ul>
+<hr/>
+</body>
+</html>
+
+
+20:47:19.853 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:11
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 942, url: https://demo.productionready.io/api/tags, response: 
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<h1>403 Forbidden</h1>
+<ul>
+<li>Code: AccessDenied</li>
+<li>Message: Access Denied</li>
+<li>RequestId: GM8STF24D767ZN8H</li>
+<li>HostId: +XcNX2DHUzj3E/irEvJSKaxkq5k+IJhI2ShkxgIUZvmNpcEBMItzyCCQbIkWAuOkgbKrGwZ2O7g=</li>
+</ul>
+<hr/>
+</body>
+</html>
+
+classpath:conduitApp/feature/HomePage.feature:11
+20:47:20.711 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+21:02:14.610 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:02:14.622 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+21:02:16.113 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:02:16.147 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:02:16.642 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:02:16.642 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:02:23.757 [pool-1-thread-2] ERROR com.intuit.karate - java.net.UnknownHostException: No such host is known (conduit.productionready.io), http call failed after 7548 milliseconds for url: https://conduit.productionready.io/api/articles?limit=10&offset=0
+21:02:23.757 [pool-1-thread-1] ERROR com.intuit.karate - java.net.UnknownHostException: conduit.productionready.io, http call failed after 7551 milliseconds for url: https://conduit.productionready.io/api/tags
+21:02:23.791 [pool-1-thread-2] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:17
+When method Get
+http call failed after 7548 milliseconds for url: https://conduit.productionready.io/api/articles?limit=10&offset=0
+java.net.UnknownHostException: No such host is known (conduit.productionready.io)
+classpath:conduitApp/feature/HomePage.feature:17
+21:02:23.791 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:10
+When method Get
+http call failed after 7551 milliseconds for url: https://conduit.productionready.io/api/tags
+java.net.UnknownHostException: conduit.productionready.io
+classpath:conduitApp/feature/HomePage.feature:10
+21:02:24.717 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
