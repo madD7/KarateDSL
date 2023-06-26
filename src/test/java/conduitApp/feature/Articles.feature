@@ -3,12 +3,9 @@ Feature: Test for Articles
     
     Background: Define URL
         Given url 'https://conduit.productionready.io/api/' 
-    
-    Scenario: Create or Post a new Article 
-        # Scenario will login first and then post the article.
-        # Upon successful login, a token will be returned which will be then 
-        # used for authorization when posting the article.
 
+        # Login is a common step. Hence, instead of writing it in all scenarios,
+        # shifted login step to background section.
         # Step 1. Login
         Given path 'users/login'
 
@@ -20,6 +17,14 @@ Feature: Test for Articles
         # To define a variable, use '* def'. def is keyword.
         * def token = response.user.token
 
+        # End of Login step.
+
+    
+    Scenario: Create or Post a new Article 
+        # Scenario will login first and then post the article.
+        # Upon successful login, a token will be returned which will be then 
+        # used for authorization when posting the article.
+
         # Step 2. Post Article
         Given header Authorization = 'Token ' + token
         Given path 'articles'
@@ -30,3 +35,4 @@ Feature: Test for Articles
         # Executing the test 2nd time, after article is already created once, will result to error
         # the return status will be 422
         And match response.article.title == 'One more new Random Article 47'
+        
