@@ -6,6 +6,12 @@ Feature: Test for Home page
     Background: Define URL 
         Given url 'https://conduit.productionready.io/api/' 
 
+
+# debug tag is added in the ConduitTest.java
+# Execute test using maven cli: mvn test -Dtest=ConduitTest#testTags
+# will execute the tagged scenario.
+# If the debug is tagged above Feature, then all listed test in the feature file will be executed.
+@debug
     # Each test in Karate is a scenario
     Scenario: Get all Tags
         # To make successful request, we need: API url, Method type & Header
