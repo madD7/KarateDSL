@@ -6,17 +6,12 @@ Feature: Test for Articles
 
         # Login is a common step. Hence, instead of writing it in all scenarios,
         # shifted login step to background section.
-        # Step 1. Login
-        Given path 'users/login'
+        # Step 1. Login - in CreateToken.feature
 
-        # In Karate, json can be used directly but it must be inline.
-        And request {"user": {"email": "karatedemo47@test.com","password": "Abcd#4567"}}
-        When method Post
-        Then status 200
-
-        # To define a variable, use '* def'. def is keyword.
-        * def token = response.user.token
-
+        # tokenResponse is an object that will hold all variables that were defined in CreateToken.feature
+        * def tokenResponse = call read('classpath:helpers/CreateToken.feature')
+        * def token = tokenResponse.authToken
+        
         # End of Login step.
 
     
