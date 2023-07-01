@@ -65,6 +65,8 @@ Feature: Test for Home page
         And match each response.tags == "#string"
     # End of Scenario
     
+    #@Ignore
+    # using ignore tags, to ignore a test scenario
     Scenario: Get 10 articles assertion example
         Given params { limit:10, offset:0 }
         Given path 'articles'
@@ -76,3 +78,4 @@ Feature: Test for Home page
         # Value of 'articlesCount' is number 500
         And match response.articlesCount == 197 
     # End of Scenario
+

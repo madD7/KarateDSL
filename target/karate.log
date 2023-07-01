@@ -73,3 +73,588 @@
 2 < alt-svc: h3=":443"; ma=86400
 {"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","cupiditate","et","quia","deserunt"]}
 
+23:02:23.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:02:25.278 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:02:25.951 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:02:26.986 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit.productionready.io/api/tags
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+23:02:28.356 [main] DEBUG com.intuit.karate - response time in milliseconds: 1362
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:32:29 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"76-zd6ecbLVqNlXjhuPH81y6YOfYKo"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ilFAFsjOXkJ1L%2FusnG%2Ft%2FDej4Q9NNc3HdMItXKE%2B7YzLCmOlpXbnw3xdQHHAPYYsc0SneoB087dt7iCz%2BtfOhkb4TnL9ACyE2%2FEGI0lyafThJPa610mSbZpS6bUDRF6gyWG6"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e0063779ba5f490-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","cupiditate","et","quia","deserunt"]}
+
+23:02:58.164 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:02:59.789 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:03:00.595 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:03:01.006 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:03:02.005 [main] DEBUG com.intuit.karate - response time in milliseconds: 994
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:33:03 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-swF2uRVMr1BOwY3D0V0eGCVgn9Q"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=I2dsla1mrKi0XNzTx3Xbooc7Rz6SzC2iAjpewZsBaklyLJ8kD7ex%2BqoK4%2BOIy6%2Bdow4eZ7Gdd4F16IbaLjThaRJNoUTsBaYlbKRLOgnGOhV1vdX17W%2BjLKJGRND3%2BlxOeJxV"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e00644b4fa81bdd-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMyNzgzLCJleHAiOjE2OTM0MTY3ODN9.l093sszHrJauQUh5oe1uTTM4dc_BSwR7DvB05gfSFUU"}}
+
+23:03:02.030 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMyNzgzLCJleHAiOjE2OTM0MTY3ODN9.l093sszHrJauQUh5oe1uTTM4dc_BSwR7DvB05gfSFUU
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:03:02.217 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMyNzgzLCJleHAiOjE2OTM0MTY3ODN9.l093sszHrJauQUh5oe1uTTM4dc_BSwR7DvB05gfSFUU
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:03:03.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 874
+4 < 401
+4 < Date: Sat, 01 Jul 2023 17:33:04 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 64
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"40-MzpzbITdb69gTCj5BHAcyuxi2c0"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dEpw6d%2BW5%2BfvKQ9k%2FWYwmu6ca2YH6ecp9%2FsP1VPdXZs0AZRN4G35TFKsW6hSMWFdyGLcx77Rt4X0LkCT1lhJd5vgzGlnn3KhYhpwoo1%2B0wCOL7nqSOMwD5bwPdKYPTmQfOsu"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006452cdf1855b-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"status":"error","message":"missing authorization credentials"}
+
+23:03:03.128 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:45
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 874, url: https://conduit.productionready.io/api/articles, response: 
+{"status":"error","message":"missing authorization credentials"}
+classpath:conduitApp/feature/Articles.feature:45
+23:06:34.556 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:06:36.479 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:06:37.131 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:06:37.529 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:06:38.848 [main] DEBUG com.intuit.karate - response time in milliseconds: 1315
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:36:40 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-FtSSCUZA2Vftclxd+TgA00o+Jvg"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NGGFMVAQFKIc3JQyGatrGyGe14xr9vZp1BYe8A6%2FrdR74%2FlixzKo4oOk12G6UVTLslYB7A8ekiiEWArFMFXZkLAZrGFcjQpAqQLKp8yyvnktDAT9aY1G5z%2BQjBRMVOcHHNbG"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006996baeaf31b-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDAwLCJleHAiOjE2OTM0MTcwMDB9.VE6lJsJ-43dawtWpj5R1L3vFjxGjBVuzDcCdVW9PcWw"}}
+
+23:06:38.871 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDAwLCJleHAiOjE2OTM0MTcwMDB9.VE6lJsJ-43dawtWpj5R1L3vFjxGjBVuzDcCdVW9PcWw
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:06:38.939 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDAwLCJleHAiOjE2OTM0MTcwMDB9.VE6lJsJ-43dawtWpj5R1L3vFjxGjBVuzDcCdVW9PcWw
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:06:39.694 [main] DEBUG com.intuit.karate - response time in milliseconds: 753
+4 < 401
+4 < Date: Sat, 01 Jul 2023 17:36:41 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 64
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"40-MzpzbITdb69gTCj5BHAcyuxi2c0"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kbWSH6SSx8gPaSVIflbUa%2BikD2D3eEbQSvzk7UbdVf%2BfRKP%2B3pfpwpQb%2FeTFoE25QTdG%2FZRPkv88x%2B1cfuGEgL6pMlExFFviNJnUr0lBODWPV93B2DdtIkfJK572Yxwl0O%2B%2F"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e00699cda266ebe-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"status":"error","message":"missing authorization credentials"}
+
+23:06:39.724 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:45
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 753, url: https://conduit.productionready.io/api/articles, response: 
+{"status":"error","message":"missing authorization credentials"}
+classpath:conduitApp/feature/Articles.feature:45
+23:07:52.276 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:07:54.134 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:07:54.814 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:07:55.536 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:07:56.784 [main] DEBUG com.intuit.karate - response time in milliseconds: 1243
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:37:58 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-Z47A4lFuK/wUYD7dQko45NUCZa0"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TB821VfrbEb3g6UQ6IObY3vy0iwkk1U6%2FiXl7n6Zwhgxxu3Q7NONu8JprlQrH7oF9PzuyS1vnyE8T%2B9V4nBZtvL32uKhrIg8%2FSISk00pvPmSuBfZkl0qLEHm3oGxtabRNuiD"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006b7d7e9e31dc-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDc3LCJleHAiOjE2OTM0MTcwNzd9.Tyf2u5nWcF3iwN1djjbk84V3YbISeH82pbSpsbPNvFw"}}
+
+23:07:56.818 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDc3LCJleHAiOjE2OTM0MTcwNzd9.Tyf2u5nWcF3iwN1djjbk84V3YbISeH82pbSpsbPNvFw
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:07:57.172 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMDc3LCJleHAiOjE2OTM0MTcwNzd9.Tyf2u5nWcF3iwN1djjbk84V3YbISeH82pbSpsbPNvFw
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:07:58.256 [main] DEBUG com.intuit.karate - response time in milliseconds: 1083
+4 < 200
+4 < Date: Sat, 01 Jul 2023 17:37:59 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"1c4-HO9jbUvdsqPoos4KbcnRAWn2J04"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=frJuMVlanEebPwl4Hz9fK2KJ4z6oBRD0Yqvftt1swFsUyJqk5bI2oSBhFqNvis%2FwuxITo5QofoaH%2BkNv52tJr%2Be%2FAMrRbDudnO76mnHGHN8KXAy4lM%2F1hmlwbTa80ofbCuiZ"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006b86e8b66ed0-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"article":{"slug":"Test-Delete-Article-195303","title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[],"createdAt":"2023-07-01T17:37:59.431Z","updatedAt":"2023-07-01T17:37:59.431Z","favorited":false,"favoritesCount":0,"author":{"username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:07:58.306 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:49
+* articleId = response.article.slug
+no step-definition method match found for: articleId = response.article.slug
+classpath:conduitApp/feature/Articles.feature:49
+23:08:29.339 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:08:31.287 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:08:31.932 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:08:32.320 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:08:33.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 1129
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:38:34 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-xrOZXdqKOvd1rdSgNma213kU3S8"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vBFBwwMJ77gz6SPElhgRR5WDi8ZvbDu9eIMz6fKXkW3z5XTsfNDU4KnuCkLUT0OMQccjhk1UOJ8HTFG6vbMHkU9H%2Bh0IciAIUbLJhJp0TQNe0av9gPIyyE764Ia2uq4zja5s"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006c62dc772963-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTE0LCJleHAiOjE2OTM0MTcxMTR9.m5dLo0NZzHtJtTPpRcX3MBgDePVZRGI7jXayS8yIUOM"}}
+
+23:08:33.477 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTE0LCJleHAiOjE2OTM0MTcxMTR9.m5dLo0NZzHtJtTPpRcX3MBgDePVZRGI7jXayS8yIUOM
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:08:33.688 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTE0LCJleHAiOjE2OTM0MTcxMTR9.m5dLo0NZzHtJtTPpRcX3MBgDePVZRGI7jXayS8yIUOM
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:08:34.569 [main] DEBUG com.intuit.karate - response time in milliseconds: 880
+4 < 422
+4 < Date: Sat, 01 Jul 2023 17:38:35 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 39
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=v93BDVljHyMCJyAKFfHCUYUuqI9FmWBteg84PiW1cwIUf9M0dgsAxBPJs9O%2Fbwhy0NbV%2FryrNPRU7SuiWtEu7qrxFPeKsaRFccBE07dZhc70jf82z32reOxegekPlzA16haW"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006c6a5c62320c-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"errors":{"title":["must be unique"]}}
+
+23:08:34.595 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:45
+Then status 200
+status code was: 422, expected: 200, response time in milliseconds: 880, url: https://conduit.productionready.io/api/articles, response: 
+{"errors":{"title":["must be unique"]}}
+classpath:conduitApp/feature/Articles.feature:45
+23:09:27.790 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:09:29.687 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:09:30.377 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:09:30.763 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:09:31.689 [main] DEBUG com.intuit.karate - response time in milliseconds: 923
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:39:33 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-OnJrCjD95Syx2mh7oqFgXvPtbVs"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ngus3oarXfWU3566TblCeUMjfQQyNA0MhFRqZd1T7jRLiqMonJfrRKx9M8iF1KsQ2SMXXHWNoG1HYoRGdJ6NGxtsrKnpMHumauue8%2BMe6cVKVZIZ%2FFhndewvjGYkftSre%2BvO"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006dcf1de46eec-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTcyLCJleHAiOjE2OTM0MTcxNzJ9.JbnqxGojn_QDqUoYXLsYO_zpqiWP7vIgzo2UqUcfuzA"}}
+
+23:09:31.714 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTcyLCJleHAiOjE2OTM0MTcxNzJ9.JbnqxGojn_QDqUoYXLsYO_zpqiWP7vIgzo2UqUcfuzA
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:09:31.907 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMTcyLCJleHAiOjE2OTM0MTcxNzJ9.JbnqxGojn_QDqUoYXLsYO_zpqiWP7vIgzo2UqUcfuzA
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:09:32.850 [main] DEBUG com.intuit.karate - response time in milliseconds: 940
+4 < 200
+4 < Date: Sat, 01 Jul 2023 17:39:34 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"1c4-2QmUxntbQTphMT9mOp1wfRP2QDY"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7Ks%2FdY%2FUIoFqYXLwh8YA2mK4ZiuJ2zoZVP1hTo6a9VlqzbQ%2BRJnG2lxPvmQI%2BAozkTNxELt%2FmdblhqhHo%2BpXXOkC%2BUvFB26tWGvVm9dIrPHiGnWT%2B%2BiMxr94%2FyfgyQz4FgeJ"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006dd67fea6ec5-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"article":{"slug":"Test-Delete-Article-195303","title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[],"createdAt":"2023-07-01T17:39:34.047Z","updatedAt":"2023-07-01T17:39:34.047Z","favorited":false,"favoritesCount":0,"author":{"username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:09:32.930 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:51
+Given header Authorization = 'Token ' + Token
+js failed:
+>>>>
+01: 'Token ' + Token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "Token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/Articles.feature:51
+23:10:37.806 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:10:39.560 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:40.204 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:10:40.519 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:10:41.532 [main] DEBUG com.intuit.karate - response time in milliseconds: 1008
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:40:42 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-SV2mJl75ZkSdQtz7olKHLEDbAVo"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DMVMzAV91pweR20FydyYFZvIwAV5qmVFENGhkvZMzt6Y0QhNHJ6cg0itKqGN8MkuH%2BXY15rNOSMtjiYeWdbUlRXCIpuP1AF2n7tqC6gURVp5KeQ7BRqe85ch6B9Ab2ZukzLn"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006f82f8698600-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84"}}
+
+23:10:41.559 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:10:41.621 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:10:42.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 860
+4 < 200
+4 < Date: Sat, 01 Jul 2023 17:40:43 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"1c4-q6yrVqbteFsU6FejjyhDia0gqEQ"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kQgZULZ3nZT%2FQifrkqBPaaRG3xrgQH6H8aB9CdFPmAdx4HwzZBQAWCHruT%2B5wqpOsOCvd7o50bRftSCLfL5IBkcLVWmw10Pp8Yh4LXH7ZeaPyRKTuzU3AYDTiYC%2BX3VrYjNs"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006f898b37f56f-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"article":{"slug":"Test-Delete-Article-195303","title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[],"createdAt":"2023-07-01T17:40:43.662Z","updatedAt":"2023-07-01T17:40:43.662Z","favorited":false,"favoritesCount":0,"author":{"username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:10:42.545 [main] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit.productionready.io/api/articles/Test-Delete-Article-195303
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+5 > Host: conduit.productionready.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+5 > Accept-Encoding: gzip,deflate
+
+
+23:10:42.676 [main] DEBUG com.intuit.karate - request:
+6 > DELETE https://conduit.productionready.io/api/articles/Test-Delete-Article-195303
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+6 > Host: api.realworld.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+6 > Accept-Encoding: gzip,deflate
+
+
+23:10:43.473 [main] DEBUG com.intuit.karate - response time in milliseconds: 795
+6 < 204
+6 < Date: Sat, 01 Jul 2023 17:40:44 GMT
+6 < Content-Length: 0
+6 < Connection: keep-alive
+6 < X-Powered-By: Express
+6 < Access-Control-Allow-Origin: *
+6 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+6 < Via: 1.1 vegur
+6 < CF-Cache-Status: DYNAMIC
+6 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bZBzUVsgf5X6HEg1jLszSf44noGOw9K5GZvf7poiEt11qxSAJzBQAau0c2EZyri%2BySgmSRLAsLESLbGy3O0qcjXylMEGkXZonXfZdDc1etDdJlRxkVILpWpLt5IZ2S6eQLbC"}],"group":"cf-nel","max_age":604800}
+6 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+6 < Server: cloudflare
+6 < CF-RAY: 7e006f906cd5f54f-BOM
+6 < alt-svc: h3=":443"; ma=86400
+
+
+23:10:43.502 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:56
+Then status 200
+status code was: 204, expected: 200, response time in milliseconds: 795, url: https://conduit.productionready.io/api/articles/Test-Delete-Article-195303, response: 
+
+classpath:conduitApp/feature/Articles.feature:56

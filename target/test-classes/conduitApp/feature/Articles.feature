@@ -35,4 +35,34 @@ Feature: Test for Articles
         # Executing the test 2nd time, after article is already created once, will result to error
         # the return status will be 422
         And match response.article.title == 'One more new Random Article 47'
-        
+    
+    @SingleTest
+    Scenario: Create and Delete an article
+        Given header Authorization = 'Token ' + token
+        Given path 'articles'
+        And request { "article" : { "title": "Test Delete Article", "description": "This article is to demonstrate delete article.", "body" : "This article will be created and then deleted.", "tagList": [] }}
+        When method Post
+        Then status 200
+        And match response.article.title == 'Test Delete Article'
+
+        # This will be required for delete operation.
+        * def articleId = response.article.slug
+
+        Given header Authorization = 'Token ' + token
+
+        # Delete url = "https://api.realworld.io/api/articles/<articleId>
+        Given path 'articles',articleId
+        When method Delete
+        # 204 - the server has successfully fulfilled the request and that there is no content to send in the response payload body
+        Then status 204         
+
+        # Verify that the article is deleted.
+        Given params { limit:10, offset:0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
+        And match response.article[0].title != 'Test Delete Article'
+
+
+
+

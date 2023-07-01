@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="6.175" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="8.533" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.16.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire2303515723912548774\surefirebooter10034625537441751556.jar C:\Users\Lenovo\AppData\Local\Temp\surefire2303515723912548774 2023-06-26T21-01-57_661-jvmRun1 surefire8095359357839570183tmp surefire_010344559366021491678tmp"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire5658036168641825584\surefirebooter4509786926557166483.jar C:\Users\Lenovo\AppData\Local\Temp\surefire5658036168641825584 2023-07-01T23-10-34_188-jvmRun1 surefire9006744246263183531tmp surefire_08046342139477597686tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="ConduitTest#testTags"/>
+    <property name="test" value="ConduitTest#singleTestTags"/>
     <property name="surefire.test.class.path" value="C:\DhavalWorkspace\UdemyKarateAPI\KarateExample\target\test-classes;C:\DhavalWorkspace\UdemyKarateAPI\KarateExample\target\classes;C:\Users\Lenovo\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\Lenovo\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\Lenovo\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\Lenovo\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\Lenovo\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\Lenovo\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\Lenovo\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\Lenovo\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\Lenovo\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\Lenovo\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\Lenovo\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Lenovo\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Lenovo\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Lenovo\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.2\jackson-datatype-jsr310-2.14.2.jar;C:\Users\Lenovo\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\Lenovo\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\Lenovo\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\Lenovo\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Lenovo\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Lenovo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\Lenovo\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\Lenovo\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\Lenovo\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\Lenovo\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Lenovo\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Lenovo\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Lenovo\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Lenovo\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Lenovo\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\Lenovo\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\Lenovo\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\Lenovo\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\Lenovo\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Lenovo"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire2303515723912548774\surefirebooter10034625537441751556.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire5658036168641825584\surefirebooter4509786926557166483.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16.1+1-LTS-1"/>
@@ -61,5 +61,137 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testTags[1][1]" classname="conduitApp.ConduitTest" time="2.887"/>
+  <testcase name="singleTestTags[1][1]" classname="conduitApp.ConduitTest" time="5.151">
+    <failure message="status code was: 204, expected: 200, response time in milliseconds: 795, url: https://conduit.productionready.io/api/articles/Test-Delete-Article-195303, response: &#10;&#10;classpath:conduitApp/feature/Articles.feature:56" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 204, expected: 200, response time in milliseconds: 795, url: https://conduit.productionready.io/api/articles/Test-Delete-Article-195303, response: 
+
+classpath:conduitApp/feature/Articles.feature:56
+</failure>
+    <system-out><![CDATA[23:10:37.806 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:10:39.560 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:40.204 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:10:40.519 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/users/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 65
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+2 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatedemo47@test.com","password":"Abcd#4567"}}
+
+23:10:41.532 [main] DEBUG com.intuit.karate - response time in milliseconds: 1008
+2 < 200
+2 < Date: Sat, 01 Jul 2023 17:40:42 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"163-SV2mJl75ZkSdQtz7olKHLEDbAVo"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DMVMzAV91pweR20FydyYFZvIwAV5qmVFENGhkvZMzt6Y0QhNHJ6cg0itKqGN8MkuH%2BXY15rNOSMtjiYeWdbUlRXCIpuP1AF2n7tqC6gURVp5KeQ7BRqe85ch6B9Ab2ZukzLn"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7e006f82f8698600-BOM
+2 < alt-svc: h3=":443"; ma=86400
+{"user":{"email":"karatedemo47@test.com","username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84"}}
+
+23:10:41.559 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 175
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+3 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:10:41.621 [main] DEBUG com.intuit.karate - request:
+4 > POST https://conduit.productionready.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 175
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+4 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[]}}
+
+23:10:42.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 860
+4 < 200
+4 < Date: Sat, 01 Jul 2023 17:40:43 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"1c4-q6yrVqbteFsU6FejjyhDia0gqEQ"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kQgZULZ3nZT%2FQifrkqBPaaRG3xrgQH6H8aB9CdFPmAdx4HwzZBQAWCHruT%2B5wqpOsOCvd7o50bRftSCLfL5IBkcLVWmw10Pp8Yh4LXH7ZeaPyRKTuzU3AYDTiYC%2BX3VrYjNs"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7e006f898b37f56f-BOM
+4 < alt-svc: h3=":443"; ma=86400
+{"article":{"slug":"Test-Delete-Article-195303","title":"Test Delete Article","description":"This article is to demonstrate delete article.","body":"This article will be created and then deleted.","tagList":[],"createdAt":"2023-07-01T17:40:43.662Z","updatedAt":"2023-07-01T17:40:43.662Z","favorited":false,"favoritesCount":0,"author":{"username":"karateDemo47","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:10:42.545 [main] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit.productionready.io/api/articles/Test-Delete-Article-195303
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+5 > Host: conduit.productionready.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+5 > Accept-Encoding: gzip,deflate
+
+
+23:10:42.676 [main] DEBUG com.intuit.karate - request:
+6 > DELETE https://conduit.productionready.io/api/articles/Test-Delete-Article-195303
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmF0ZWRlbW80N0B0ZXN0LmNvbSIsInVzZXJuYW1lIjoia2FyYXRlRGVtbzQ3IiwiaWF0IjoxNjg4MjMzMjQyLCJleHAiOjE2OTM0MTcyNDJ9.RdymcFGtS0k4vxKMUYc535xKyMAuCPPqP6qiNjjRm84
+6 > Host: api.realworld.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+6 > Accept-Encoding: gzip,deflate
+
+
+23:10:43.473 [main] DEBUG com.intuit.karate - response time in milliseconds: 795
+6 < 204
+6 < Date: Sat, 01 Jul 2023 17:40:44 GMT
+6 < Content-Length: 0
+6 < Connection: keep-alive
+6 < X-Powered-By: Express
+6 < Access-Control-Allow-Origin: *
+6 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+6 < Via: 1.1 vegur
+6 < CF-Cache-Status: DYNAMIC
+6 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bZBzUVsgf5X6HEg1jLszSf44noGOw9K5GZvf7poiEt11qxSAJzBQAau0c2EZyri%2BySgmSRLAsLESLbGy3O0qcjXylMEGkXZonXfZdDc1etDdJlRxkVILpWpLt5IZ2S6eQLbC"}],"group":"cf-nel","max_age":604800}
+6 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+6 < Server: cloudflare
+6 < CF-RAY: 7e006f906cd5f54f-BOM
+6 < alt-svc: h3=":443"; ma=86400
+
+
+23:10:43.502 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:56
+Then status 200
+status code was: 204, expected: 200, response time in milliseconds: 795, url: https://conduit.productionready.io/api/articles/Test-Delete-Article-195303, response: 
+
+classpath:conduitApp/feature/Articles.feature:56
+---------------------------------------------------------
+feature: classpath:conduitApp/feature/Articles.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 3.8723
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
 </testsuite>

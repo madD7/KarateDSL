@@ -7,6 +7,7 @@ import com.intuit.karate.junit5.Karate;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/** Our Karate Runner Class. */
 class ConduitTest {
 
     @Test
@@ -30,4 +31,12 @@ class ConduitTest {
         return Karate.run().tags("@debug").relativeTo(getClass());
     }
 
+    /**
+     * Copied from: https://github.com/karatelabs/karate#junit-5
+     * Compare to understand modifications done.
+     */
+    @Karate.Test
+    Karate singleTestTags() {
+        return Karate.run().tags("@SingleTest").relativeTo(getClass());
+    }
 }
