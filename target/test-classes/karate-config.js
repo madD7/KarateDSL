@@ -16,10 +16,13 @@ function fn() {
 
   // Customize environment specific config variables 
   if (env == 'dev') {
-    // customize
     // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
+    config.userEmail = 'karatedemo47@test.com'
+    config.userPassword = 'Abcd#4567'
+  } else if (env == 'QA') {
     // customize
+    config.userEmail = 'karatedemoQA47@test.com'
+    config.userPassword = 'Wxyz#4567'
   }
 
   return config;

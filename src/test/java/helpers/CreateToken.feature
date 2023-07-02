@@ -11,10 +11,10 @@ Feature: Create Token
         Given path 'users/login'
 
         # In Karate, json can be used directly but it must be inline.
-        And request {"user": {"email": "karatedemo47@test.com","password": "Abcd#4567"}}
+        # And request {"user": {"email": "karatedemo47@test.com","password": "Abcd#4567"}}
 
         # when parameters are passed: 
-        # And request {"user": {"email": "#(email)","password": "#(password)"}}
+        And request {"user": {"email": "#(email)","password": "#(password)"}}
 
         When method Post
         Then status 200

@@ -11,14 +11,12 @@ Feature: Test for Articles
         # tokenResponse is an object that will hold all variables that were defined in CreateToken.feature
         # Using callonce, the function will be called only once, and when we call 2nd scenario, 
         # karate will read token value from its cache and not make call to token feature.
-        * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
+        ## * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
+        # Passing parameter, object - enclosed in {}, to another feature
+        * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature') {"email": "#(userEmail)","password": "#(userPassword)"}   
         * def token = tokenResponse.authToken
 
-        Then karate.log(token)
-
-        # Passing parameter, object - enclosed in {}, to another feature
-        # * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature') {"email": "karatedemo47@test.com","password": "Abcd#4567"}   
-        
+        # Then karate.log(token)        
         # End of Login step.
 
     
