@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"conduitApp\/feature\/Articles[1:25]","start":1688288767427,"end":1688288769214,"title":"conduitApp\/feature\/Articles[1:25] 14:36:07.427-14:36:09.214 Create or Post a new Article","className":"failed"},{"id":2,"group":2,"content":"conduitApp\/feature\/Articles[2:42]","start":1688288767406,"end":1688288771760,"title":"conduitApp\/feature\/Articles[2:42] 14:36:07.406-14:36:11.760 Create and Delete an article"},{"id":3,"group":3,"content":"conduitApp\/feature\/HomePage[1:16]","start":1688288767411,"end":1688288768901,"title":"conduitApp\/feature\/HomePage[1:16] 14:36:07.411-14:36:08.901 Get all Tags"},{"id":4,"group":4,"content":"conduitApp\/feature\/HomePage[2:26]","start":1688288767396,"end":1688288769408,"title":"conduitApp\/feature\/HomePage[2:26] 14:36:07.396-14:36:09.408 Get 10 articles from the page passing individual parameter"},{"id":5,"group":5,"content":"conduitApp\/feature\/HomePage[3:37]","start":1688288767422,"end":1688288769436,"title":"conduitApp\/feature\/HomePage[3:37] 14:36:07.422-14:36:09.436 Get 10 articles from the page passing object with parameters"},{"id":6,"group":3,"content":"conduitApp\/feature\/HomePage[4:48]","start":1688288768909,"end":1688288769950,"title":"conduitApp\/feature\/HomePage[4:48] 14:36:08.909-14:36:09.950 Assertion example"},{"id":7,"group":1,"content":"conduitApp\/feature\/HomePage[5:70]","start":1688288769232,"end":1688288770828,"title":"conduitApp\/feature\/HomePage[5:70] 14:36:09.232-14:36:10.828 Get 10 articles assertion example"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

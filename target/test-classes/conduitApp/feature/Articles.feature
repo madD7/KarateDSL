@@ -2,7 +2,7 @@
 Feature: Test for Articles
     
     Background: Define URL
-        Given url 'https://conduit.productionready.io/api/' 
+        Given url apiUrl
 
         # Login is a common step. Hence, instead of writing it in all scenarios,
         # shifted login step to background section.
@@ -11,8 +11,10 @@ Feature: Test for Articles
         # tokenResponse is an object that will hold all variables that were defined in CreateToken.feature
         # Using callonce, the function will be called only once, and when we call 2nd scenario, 
         # karate will read token value from its cache and not make call to token feature.
-        * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature')
+        * def tokenResponse = call read('classpath:helpers/CreateToken.feature')
         * def token = tokenResponse.authToken
+
+        Then karate.log(token)
 
         # Passing parameter, object - enclosed in {}, to another feature
         # * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature') {"email": "karatedemo47@test.com","password": "Abcd#4567"}   
@@ -61,7 +63,7 @@ Feature: Test for Articles
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.article[0].title != 'Test Delete Article'
+        And match response.articles[0].title != 'Test Delete Article'
 
 
 

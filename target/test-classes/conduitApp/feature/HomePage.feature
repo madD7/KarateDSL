@@ -4,7 +4,7 @@ Feature: Test for Home page
 
     # The Background keyword is applied to replicate the same steps before all Scenarios within a Feature File
     Background: Define URL 
-        Given url 'https://conduit.productionready.io/api/' 
+        Given url apiUrl
 
 
 # debug tag is added in the ConduitTest.java

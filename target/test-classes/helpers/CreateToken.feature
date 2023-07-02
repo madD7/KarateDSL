@@ -2,8 +2,8 @@
 # Hence, this feature file is kept inside another folder.
 
 Feature: Create Token
-    Background: Define URL
-        Given url 'https://conduit.productionready.io/api/' 
+    Scenario: Create Token
+        Given url apiUrl
 
         # Login is a common step. Hence, instead of writing it in all scenarios,
         # shifted login step to background section.
